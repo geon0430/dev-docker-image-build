@@ -1,8 +1,8 @@
 #!/bin/bash
 
 port_num="1"
-CONTAINER_NAME="jetson-image-test"
-IMAGE_NAME="nvidia-jeston/amd64/jetpack6.1/python3.10/tensorrt10.3.0/image"
+CONTAINER_NAME="image-test"
+IMAGE_NAME="nvidia/x86_64/ubuntu22.04/python3.8.10/tensorrt8.5.2/image"
 TAG="1"
 
 docker run \
