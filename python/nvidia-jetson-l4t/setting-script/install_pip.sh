@@ -3,6 +3,10 @@
 set -e  
 set -x  
 
+apt-get install -y \
+    python3-pip
+
+
 pip install --upgrade pip setuptools wheel
 
 pip install jupyter
@@ -25,5 +29,5 @@ pip install pillow-heif
 pip install opencv-python
 pip install numpy  
 pip install torch
-pip install cucim-cu12
 pip install cupy-cuda12x
+pip install cucim-cu12

@@ -12,35 +12,42 @@ apt-get install -y \
     unzip \
     wget \
     tmux \
+    sudo \
     vim || { echo "Error: Failed to install dev-tool dependencies"; exit 1; }
 
 apt-get install -y \
+    cmake \
+    make \
+    automake \
     pkg-config \
     autoconf \
     v4l-utils \
     zlib1g-dev \
+    libxnvctrl-dev \
     build-essential \
     libjpeg-dev \
     libpng-dev \
     libtiff-dev \
-    gawk \
-    bison \
-    manpages-dev \
-    texinfo \
     gcc \
     g++ \
     tar \
     sed \
     flex \
     libgl1-mesa-glx \
-    libstdc++6 || { echo "Error: Failed to install dependencies"; exit 1; }
-
-apt-get install -y \
-    cmake \
-    automake \
+    yasm \
+    libtool \
+    nasm \
+    manpages-dev \
+    libdrm-dev \
+    libstdc++6 \
+    libass-dev \
+    libfreetype6-dev \
+    libgnutls28-dev \
+    libmp3lame-dev \
+    libopus-dev \
+    libvpx-dev \
     libx264-dev \
     libx265-dev \
-    libv4l-dev \
-    libavcodec-dev \
-    libavformat-dev \
-    libswscale-dev || { echo "Error: Failed to install FFmpeg dependencies"; exit 1; }
+    libvorbis-dev \
+    libwebp-dev \
+    libnuma-dev  || { echo "Error: Failed to install dependencies"; exit 1; }
