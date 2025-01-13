@@ -14,15 +14,8 @@ This Docker image is designed for development on the **NVIDIA Jetson AGX Orin** 
 | **CUDA Version**       | 12.x                                                                           |
 | **Python Version**     | 3.10                                                                           |
 | **TensorRT Version**   | 10.3.0                                                                         |
+| **FFMPEG Version**     | 145a3a8                                                                        |
 | **Base Image**         | NVIDIA L4T CUDA (supports CUDA-based development)                              |
-
----
-
-## Why NVIDIA L4T CUDA?
-
-The image is built on **NVIDIA L4T CUDA** instead of **NVIDIA L4T TensorRT**, as:
-- **NVIDIA L4T CUDA** includes CUDA libraries, enabling the installation of libraries like `CuPy` and `cuCIM`, which are essential for CUDA-based operations.
-- **NVIDIA L4T TensorRT** does not include CUDA, limiting flexibility in development.
 
 ---
 
